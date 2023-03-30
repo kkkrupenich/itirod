@@ -12,9 +12,9 @@ This project would looks, and functioning like popular messanger Telegram
 
 # Mock Up
 
-![image](https://user-images.githubusercontent.com/80534443/228950190-a32077f8-9742-46e1-bf1c-de03478798cd.png)
+![image](https://user-images.githubusercontent.com/80534443/228952390-660a1cdc-f35b-4ce8-817e-e824d2793281.png)
 
-![image](https://user-images.githubusercontent.com/80534443/228950259-bcc52a56-424a-46cd-8819-18ea42da5c3b.png)
+![image](https://user-images.githubusercontent.com/80534443/228952336-48df540f-6c3a-4914-944e-9a9193e4a325.png)
 
 ![image](https://user-images.githubusercontent.com/80534443/228950358-4695fdb1-6bd9-4097-8624-bf10f60de46a.png)
 
