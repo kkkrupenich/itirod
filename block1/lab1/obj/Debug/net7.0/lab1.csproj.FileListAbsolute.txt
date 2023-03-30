@@ -1,0 +1,15 @@
+D:\labs\itirod\lab1\lab1\bin\Debug\net7.0\lab1.exe
+D:\labs\itirod\lab1\lab1\bin\Debug\net7.0\lab1.deps.json
+D:\labs\itirod\lab1\lab1\bin\Debug\net7.0\lab1.runtimeconfig.json
+D:\labs\itirod\lab1\lab1\bin\Debug\net7.0\lab1.dll
+D:\labs\itirod\lab1\lab1\bin\Debug\net7.0\lab1.pdb
+D:\labs\itirod\lab1\lab1\obj\Debug\net7.0\lab1.csproj.AssemblyReference.cache
+D:\labs\itirod\lab1\lab1\obj\Debug\net7.0\lab1.GeneratedMSBuildEditorConfig.editorconfig
+D:\labs\itirod\lab1\lab1\obj\Debug\net7.0\lab1.AssemblyInfoInputs.cache
+D:\labs\itirod\lab1\lab1\obj\Debug\net7.0\lab1.AssemblyInfo.cs
+D:\labs\itirod\lab1\lab1\obj\Debug\net7.0\lab1.csproj.CoreCompileInputs.cache
+D:\labs\itirod\lab1\lab1\obj\Debug\net7.0\lab1.dll
+D:\labs\itirod\lab1\lab1\obj\Debug\net7.0\refint\lab1.dll
+D:\labs\itirod\lab1\lab1\obj\Debug\net7.0\lab1.pdb
+D:\labs\itirod\lab1\lab1\obj\Debug\net7.0\lab1.genruntimeconfig.cache
+D:\labs\itirod\lab1\lab1\obj\Debug\net7.0\ref\lab1.dll
