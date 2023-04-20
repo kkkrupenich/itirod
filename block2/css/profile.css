@@ -1,0 +1,42 @@
+.login input[type="text"]{
+    width: 100%;
+    border-radius: 0.25rem;
+    padding: 1rem;
+}
+
+.login input[type="text"]{
+    background-color: #2d3034;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.login input[type="text"]:focus,
+.login input[type="text"]:hover{
+    background-color: #3f4348;
+}
+
+footer .buton {
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+    border-radius: 0.25rem;
+    padding: 1rem;
+    background-color: #d44179;
+    color: #eee;
+    font-weight: 700;
+}
+  
+footer .buton:focus,
+footer .buton:hover {
+    background-color: #ea4c89;
+}
+
+.form_field img{
+    margin: auto;
+}
+
+.grid{  
+    margin: 50px auto;
+}

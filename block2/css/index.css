@@ -1,0 +1,307 @@
+html{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --send-bg: #0B93F6;
+    --text-color: white;
+    --receive-bg: #34373c;
+    --main-bg: #1d1f21;
+    --friend-hover: #2d2f33;
+    --friend-focus: #35383c;
+    --dialog-bg: #222426;
+}
+
+body {
+    background-color: var(--main-bg);
+    padding: 0;
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.friends{
+    flex: 20%;
+    height: 100vh;
+}
+
+.dialog{
+    flex: 80%;
+    height: 100vh;
+    background-color: var(--main-bg);
+}
+
+.friend{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    background-color: var(--main-bg);
+    color: var(--text-color);
+    border: 0;
+    width: 100%;
+    height: 50px;
+    max-width: 230px; /* potom ispravlu jsom na mnogotochie*/
+}
+
+.friend img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.friend p {
+    margin-left: 15px;
+}
+
+.friend:hover{
+    background-color: var(--friend-hover);
+}
+
+.friend:focus{
+    background-color: var(--friend-focus);
+}
+
+.friends header{
+    display: flex;
+    flex-direction: row;
+    height: 7%;
+}
+
+.friends main{
+    height: 93%;
+}
+
+.dialog header{
+    background-color: var(--main-bg);
+    color: var(--text-color);
+    height: 7%;
+    display: flex;
+    flex-direction: row;
+}
+
+.dialog main{
+    background-color: var(--dialog-bg);
+    margin: 0;
+    padding: 1% 1%;
+    width: 98%; 
+    height: 82%;
+}
+
+.dialog footer{
+    background-color: var(--main-bg);
+    height: 7%;
+}
+
+.ul1{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+:root{
+    --send-bg: #0B93F6;
+    --text-color: white;
+    --receive-bg: #34373c;
+}
+
+.ul1::-webkit-scrollbar,
+.ul2::-webkit-scrollbar{
+    display: none;
+}
+
+.ul2 {
+    padding: 0;
+    margin: auto;
+    list-style-type: none;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    width: 100%;
+    height:100%;
+}
+  
+.ul2 li {
+    max-width: 450px;
+    word-wrap: break-word;
+    margin-bottom: 12px;
+    line-height: 24px;
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+  
+.send {
+    color: var(--text-color); 
+    background: var(--send-bg);
+    align-self: flex-end;
+}
+
+.receive {
+    color: var(--text-color);
+    background: var(--receive-bg);
+    align-self: flex-start;
+}
+
+.friends header a{
+    text-decoration: none;
+    cursor: default;
+}
+
+.profile {
+    background-color: var(--main-bg);
+    border: 0;
+    height: 100%;
+}
+
+.profile:hover {
+    background-color: var(--friend-hover);
+}
+
+.profile img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.friends header input[type="text"]{
+    margin: auto;
+    height: 60%;
+    width: 67%;
+    background-color: var(--friend-focus);
+    border: 0;
+    border-radius: 20px;
+    padding-left: 10px;
+    color: var(--text-color);
+}
+
+.dialog header img {
+    margin: auto 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.dialog header .status {
+    margin: auto 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dialog header .status .username{
+
+    padding: 0;
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.dialog header .status .last_seen{
+    padding: 0;
+    margin: 0;
+    font-size: 0.7rem;
+}
+
+.dialog footer form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.dialog footer input[type="text"]{
+    font-size: 1rem;
+    margin: 0 0.75%;
+    margin-top: auto;
+    border-radius: 25px;
+    height: 80%;
+    width: 100%;
+    padding-left: 10px;
+    background-color: var(--friend-focus);
+    color: var(--text-color);
+    border: 0;
+}
+
+.dialog footer button {
+    height: 50px;
+    width: 50px;
+    border: 0;
+    margin-top: 0.7%;
+    background-color: var(--main-bg);
+}
+
+.dialog footer button img{
+    height: 30px;
+    width: 30px;
+}
+
+@media only screen and (max-width: 750px) {
+
+
+    .friends header input[type="text"] {
+        width: 50%;
+    }
+
+    .friends header a {
+        margin: auto;
+    }
+
+    .friend {
+        width: 175px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+
+    .friends header input[type="text"] {
+        width: 50%;
+    }
+
+    .friends header a {
+        margin: auto;
+    }
+
+    .friend {
+        width: 125px;
+    }
+}
+
+
+@media only screen and (max-width: 450px)  {
+
+    .friends header {
+        flex-direction: column;
+        height: 12%;
+    }
+
+    .friends header input[type="text"] {
+        width: 50px;
+    }
+
+    .friends header a {
+        margin: auto;
+    }
+
+    .friends main {
+        height: 88%;
+    }
+
+    .friend {
+        width: 100%;
+    }
+
+    .friend img{
+        margin: auto;
+    }
+
+    .friend p{
+        display: none;
+    }
+}
