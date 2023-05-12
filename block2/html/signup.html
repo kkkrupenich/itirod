@@ -8,7 +8,7 @@
     <title>Sign Up</title>
 </head>
 <body>
-    <section class="grid">
+    <section>
         <header>
             <h1>SIGN UP</h1>
         </header>
@@ -16,35 +16,35 @@
         <main>
             <form method="post" action="index.html" class="login">
 
-                <div class="form_field">
-                    <label><svg class="icon">
+                <div class="login__field">
+                    <label><svg class="login__icon">
                         <use xlink:href="#icon-user"></use>
                     </svg></label>
-                    <input type="email" placeholder="Email" required>
+                    <input type="email" placeholder="Email" id="username" name="username" required>
                 </div>
 
-                <div class="form_field">
-                    <label><svg class="icon">
+                <div class="login__field">
+                    <label><svg class="login__icon">
                             <use xlink:href="#icon-lock"></use>
                     </svg></label>
                     <input type="password" placeholder="Password" required>
                 </div>
 
-                <div class="form_field">
-                    <label><svg class="icon">
+                <div class="login__field">
+                    <label><svg class="login__icon">
                             <use xlink:href="#icon-lock"></use>
                     </svg></label>
                     <input type="password" placeholder="Confirm password" required>
                 </div>
 
-                <div class="form_field">
+                <div class="login__field">
                     <input type="submit" value="SIGN UP">
                 </div>
             </form>
         </main>
 
         <footer>
-            <p class="text">Already have an account? <a href="signin.html">Sign in now</a> <svg class="icon">
+            <p class="text">Already have an account? <a href="signin.html">Sign in now</a> <svg class="text__icon">
                 <use xlink:href="#icon-arrow-right"></use>
             </svg></p>
         </footer>

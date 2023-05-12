@@ -14,7 +14,7 @@ body {
     line-height: 1.5;   
 }
 
-.grid{  
+body section{  
     width: 300px;
     margin: 200px auto;
 }
@@ -28,7 +28,8 @@ header h1{
     display: none;
 }
   
-.icon {
+.login__icon,
+.text__icon {
     height: 1em;
     display: inline-block;
     fill: #606468;
@@ -60,7 +61,7 @@ input[type="submit"] {
     cursor: pointer;
 }
 
-.form_field {  
+.login__field {  
     display: flex;
 }
 

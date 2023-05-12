@@ -8,7 +8,7 @@
     <title>Sign In</title>
 </head>
 <body>
-    <section class="grid">
+    <section>
         <header>
             <h1>SIGN IN</h1>
         </header>
@@ -16,28 +16,28 @@
         <main>
             <form method="post" action="index.html" class="login">
 
-                <div class="form_field">
-                    <label><svg class="icon">
+                <div class="login__field">
+                    <label for="username"><svg class="login__icon">
                         <use xlink:href="#icon-user"></use>
                     </svg></label>
-                    <input type="email" placeholder="Email" required>
+                    <input type="email" placeholder="Email" id="username" name="username" required>
                 </div>
 
-                <div class="form_field">
-                    <label><svg class="icon">
+                <div class="login__field">
+                    <label for="password"><svg class="login__icon">
                             <use xlink:href="#icon-lock"></use>
                     </svg></label>
-                    <input type="password" placeholder="Password" required>
+                    <input type="password" placeholder="Password" id="password" name="password" required>
                 </div>
 
-                <div class="form_field">
+                <div class="login__field">
                     <input type="submit" value="SIGN IN">
                 </div>
             </form>
         </main>
 
         <footer>
-            <p class="text">Do not have an account? <a href="signup.html">Sign up now</a> <svg class="icon">
+            <p class="text">Do not have an account? <a href="signup.html">Sign up now</a> <svg class="text__icon">
                 <use xlink:href="#icon-arrow-right"></use>
             </svg></p>
         </footer>

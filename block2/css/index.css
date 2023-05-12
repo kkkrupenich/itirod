@@ -37,7 +37,7 @@ body {
     background-color: var(--main-bg);
 }
 
-.friend{
+.friends__list-friend{
     display: flex;
     flex-direction: row;
     text-align: left;
@@ -49,20 +49,20 @@ body {
     max-width: 230px; /* potom ispravlu jsom na mnogotochie*/
 }
 
-.friend img {
+.friends__list-friend img {
     width: 40px;
     border-radius: 50%;
 }
 
-.friend p {
+.friends__list-friend p {
     margin-left: 15px;
 }
 
-.friend:hover{
+.friends__list-friend:hover{
     background-color: var(--friend-hover);
 }
 
-.friend:focus{
+.friends__list-friend:focus{
     background-color: var(--friend-focus);
 }
 
@@ -94,10 +94,10 @@ body {
 
 .dialog footer{
     background-color: var(--main-bg);
-    height: 7%;
+    height: 7.5%;
 }
 
-.ul1{
+.friends__list{
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -106,18 +106,12 @@ body {
     overflow-y: scroll;
 }
 
-:root{
-    --send-bg: #0B93F6;
-    --text-color: white;
-    --receive-bg: #34373c;
-}
-
-.ul1::-webkit-scrollbar,
-.ul2::-webkit-scrollbar{
+.friends__list::-webkit-scrollbar,
+.dialog__messages::-webkit-scrollbar{
     display: none;
 }
 
-.ul2 {
+.dialog__messages {
     padding: 0;
     margin: auto;
     list-style-type: none;
@@ -129,7 +123,7 @@ body {
     height:100%;
 }
   
-.ul2 li {
+.dialog__messages li {
     max-width: 450px;
     word-wrap: break-word;
     margin-bottom: 12px;
@@ -139,13 +133,13 @@ body {
     border-radius: 25px;
 }
   
-.send {
+.dialog__messages-send {
     color: var(--text-color); 
     background: var(--send-bg);
     align-self: flex-end;
 }
 
-.receive {
+.dialog__messages-receive {
     color: var(--text-color);
     background: var(--receive-bg);
     align-self: flex-start;
@@ -156,17 +150,17 @@ body {
     cursor: default;
 }
 
-.profile {
+.friends__profile {
     background-color: var(--main-bg);
     border: 0;
     height: 100%;
 }
 
-.profile:hover {
+.friends__profile:hover {
     background-color: var(--friend-hover);
 }
 
-.profile img {
+.friends__profile img {
     width: 40px;
     border-radius: 50%;
 }
@@ -189,20 +183,20 @@ body {
     border-radius: 50%;
 }
 
-.dialog header .status {
+.dialog__status {
     margin: auto 10px;
     display: flex;
     flex-direction: column;
 }
 
-.dialog header .status .username{
+.dialog__username{
 
     padding: 0;
     margin: 0;
     font-size: 1.25rem;
 }
 
-.dialog header .status .last_seen{
+.dialog__lastseen{
     padding: 0;
     margin: 0;
     font-size: 0.7rem;
@@ -217,8 +211,7 @@ body {
 
 .dialog footer input[type="text"]{
     font-size: 1rem;
-    margin: 0 0.75%;
-    margin-top: auto;
+    margin: auto 1%;
     border-radius: 25px;
     height: 80%;
     width: 100%;
@@ -229,10 +222,10 @@ body {
 }
 
 .dialog footer button {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     border: 0;
-    margin-top: 0.7%;
+    margin: auto 0;
     background-color: var(--main-bg);
 }
 
@@ -243,65 +236,26 @@ body {
 
 @media only screen and (max-width: 750px) {
 
-
-    .friends header input[type="text"] {
-        width: 50%;
-    }
-
-    .friends header a {
-        margin: auto;
-    }
-
-    .friend {
-        width: 175px;
-    }
+    .friends header input[type="text"] { width: 50%; }
+    .friends header a { margin: auto; }
+    .friends__list-friend { width: 175px; }
 }
 
 @media only screen and (max-width: 600px) {
 
-
-    .friends header input[type="text"] {
-        width: 50%;
-    }
-
-    .friends header a {
-        margin: auto;
-    }
-
-    .friend {
-        width: 125px;
-    }
+    .friends header input[type="text"] { width: 50%; }
+    .friends header a { margin: auto; }
+    .friends__list-friend { width: 125px; }
 }
 
 
 @media only screen and (max-width: 450px)  {
 
-    .friends header {
-        flex-direction: column;
-        height: 12%;
-    }
-
-    .friends header input[type="text"] {
-        width: 50px;
-    }
-
-    .friends header a {
-        margin: auto;
-    }
-
-    .friends main {
-        height: 88%;
-    }
-
-    .friend {
-        width: 100%;
-    }
-
-    .friend img{
-        margin: auto;
-    }
-
-    .friend p{
-        display: none;
-    }
+    .friends header { flex-direction: column; height: 12%; }
+    .friends header input[type="text"] { width: 50px; }
+    .friends header a { margin: auto; }
+    .friends main { height: 88%; }
+    .friends__list-friend { width: 100%; }
+    .friends__list-friend img{ margin: auto; }
+    .friends__list-friend p{  display: none;}
 }

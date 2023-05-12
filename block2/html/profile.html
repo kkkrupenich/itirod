@@ -9,7 +9,7 @@
     <title>Profile</title>
 </head>
 <body>
-    <section class="grid">
+    <section>
         <header>
             <h1>PROFILE</h1>
         </header>
@@ -17,41 +17,39 @@
         <main>
             <form method="post" class="login">
                 
-                <div class="form_field">
-                    <img src="../img/avatar.png" width="100px">
+                <div class="login__field">
+                    <img id="avatar-img" src="../img/avatar.png" width="100px">
                 </div>
-
-                <input type="file" id="img" name="img" accept="image/*">
     
-                <div class="form_field">
-                    <label><svg class="icon">
+                <div class="login__field">
+                    <label for="email"><svg class="login__icon">
                         <use xlink:href="#icon-user"></use>
                     </svg></label>
-                    <input type="email" placeholder="Email" required>
+                    <input type="email" placeholder="Email" id="email" name="email" required>
                 </div>
 
-                <div class="form_field">
-                    <label><svg class="icon">
+                <div class="login__field">
+                    <label for="phone_number"><svg class="login__icon">
                         <use xlink:href="#icon-user"></use>
                     </svg></label>
-                    <input type="text" placeholder="Phone number">
+                    <input type="text" placeholder="Phone number" id="phone_number" name="phone_number">
                 </div>
 
-                <div class="form_field">
-                    <label><svg class="icon">
+                <div class="login__field">
+                    <label for="name"><svg class="login__icon">
                         <use xlink:href="#icon-user"></use>
                     </svg></label>
-                    <input type="text" placeholder="Mother's Maiden Name">
+                    <input type="text" placeholder="Mother's Maiden Name" id="name" name="name">
                 </div>
                 
-                <div class="form_field">
-                    <label><svg class="icon">
+                <div class="login__field">
+                    <label for="password"><svg class="login__icon">
                             <use xlink:href="#icon-lock"></use>
                     </svg></label>
-                    <input type="password" placeholder="Password" required>
+                    <input type="password" placeholder="Password" id="password" name="password" required>
                 </div>
                 
-                <div class="form_field">
+                <div class="login__field">
                     <input type="submit" value="SAVE">
                 </div>            
             </form>
@@ -59,7 +57,7 @@
 
         <footer>
             <br>
-            <button class="buton">
+            <button class="logout">
                 LOGOUT
             </button>
         </footer>
