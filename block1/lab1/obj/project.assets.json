@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\labs\\itirod\\lab1\\lab1\\lab1.csproj",
+      "projectUniqueName": "D:\\labs\\itirod\\block1\\lab1\\lab1.csproj",
       "projectName": "lab1",
-      "projectPath": "D:\\labs\\itirod\\lab1\\lab1\\lab1.csproj",
+      "projectPath": "D:\\labs\\itirod\\block1\\lab1\\lab1.csproj",
       "packagesPath": "C:\\Users\\krupe\\.nuget\\packages\\",
-      "outputPath": "D:\\labs\\itirod\\lab1\\lab1\\obj\\",
+      "outputPath": "D:\\labs\\itirod\\block1\\lab1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\krupe\\AppData\\Roaming\\NuGet\\NuGet.Config"

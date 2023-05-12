@@ -1,0 +1,41 @@
+.login input[type="text"]{
+    width: 100%;
+    border-radius: 0.25rem;
+    padding: 1rem;
+}
+
+.login input[type="text"]{
+    background-color: #2d3034;
+}
+
+.login input[type="text"]:focus,
+.login input[type="text"]:hover{
+    background-color: #3f4348;
+}
+
+footer .logout {
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+    border-radius: 0.25rem;
+    padding: 1rem;
+    background-color: #d44179;
+    color: #eee;
+    font-weight: 700;
+}
+  
+footer .logout:focus,
+footer .logout:hover {
+    background-color: #ea4c89;
+}
+
+.login__field img{
+    margin: auto;
+    border-radius: 50%;
+}
+
+body section{  
+    margin: 50px auto;
+}
