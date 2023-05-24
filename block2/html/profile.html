@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" text="text/css" href="../css/auth.css">
     <link rel="stylesheet" text="text/css" href="../css/profile.css">
     <title>Profile</title>
@@ -17,8 +17,9 @@
         <main>
             <form method="post" class="login">
                 
-                <div class="login__field">
-                    <img id="avatar-img" src="../img/avatar.png" width="100px">
+                <div class="login__field" id="avatar">
+                    <img id="avatar-img" src="../img/avatar.png" onclick="raiseClick()" width="100px" height="100px">
+                    <input id="image_input" onchange="loadFile(event)" type="file" accept="image/*" style="visibility: hidden; width: 0px; height: 0;">
                 </div>
     
                 <div class="login__field">
@@ -26,13 +27,6 @@
                         <use xlink:href="#icon-user"></use>
                     </svg></label>
                     <input type="email" placeholder="Email" id="email" name="email" required>
-                </div>
-
-                <div class="login__field">
-                    <label for="phone_number"><svg class="login__icon">
-                        <use xlink:href="#icon-user"></use>
-                    </svg></label>
-                    <input type="text" placeholder="Phone number" id="phone_number" name="phone_number">
                 </div>
 
                 <div class="login__field">
@@ -50,14 +44,14 @@
                 </div>
                 
                 <div class="login__field">
-                    <input type="submit" value="SAVE">
+                    <input type="submit" value="SAVE" id="save-button">
                 </div>            
             </form>
         </main>
 
         <footer>
             <br>
-            <button class="logout">
+            <button class="logout" id="logout-button">
                 LOGOUT
             </button>
         </footer>
@@ -74,5 +68,8 @@
           <path d="M1600 1405q0 120-73 189.5t-194 69.5H459q-121 0-194-69.5T192 1405q0-53 3.5-103.5t14-109T236 1084t43-97.5 62-81 85.5-53.5T538 832q9 0 42 21.5t74.5 48 108 48T896 971t133.5-21.5 108-48 74.5-48 42-21.5q61 0 111.5 20t85.5 53.5 62 81 43 97.5 26.5 108.5 14 109 3.5 103.5zm-320-893q0 159-112.5 271.5T896 896 624.5 783.5 512 512t112.5-271.5T896 128t271.5 112.5T1280 512z" />
         </symbol>
     </svg>
+
+    <script src="../js/avatar.js"></script>
+    <script src="../js/profile.js" type="module"></script>
 </body>
 </html>
