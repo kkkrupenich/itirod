@@ -202,9 +202,7 @@ body {
     font-size: 0.7rem;
 }
 
-.dialog footer form {
-    height: 100%;
-    width: 100%;
+.dialog footer {
     display: flex;
     flex-direction: row;
 }
@@ -257,5 +255,5 @@ body {
     .friends main { height: 88%; }
     .friends__list-friend { width: 100%; }
     .friends__list-friend img{ margin: auto; }
-    .friends__list-friend p{  display: none;}
+    .friends__list-friend p{  display: none; }
 }
